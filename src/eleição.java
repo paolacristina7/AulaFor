@@ -14,8 +14,20 @@ public class eleição {
 
             if (voto == 1) {
                 votos1 += 1;
-            }
-
-            }
+            } else if (voto == 2) {
+                votos2 += 1;
+            } else
+                IO.println("Voce votou nulo");
         }
+        if (votos1 < votos2){
+            IO.println("Gretchem Ganhou!Nova presidente");
+        }else if(votos1>votos2){
+            IO.println("O Lucas Ganhou a Eleição!Novo presidente");
+        }else
+            IO.println("Eles Empataram");
+        IO.println("Gretchem: "+votos1+" | Lucas neto: "+votos2);
+
     }
+
+}
+
